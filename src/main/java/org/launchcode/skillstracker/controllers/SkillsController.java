@@ -15,9 +15,9 @@ public class SkillsController {
     public String skillsTracker() {
         String html =
                 "<html>" +
-                        "<body>" +
+                        "<body style= 'background-color: LightGray'>" +
                         "<h1 style='font-size:10vw;text-align:center'>Skills Tracker</h1>" +
-                        "<h2 style='font-size:5vw;text-align:center'>Some cool programming languages to learn!</h2>" +
+                        "<h2 style='font-size:5vw;text-align:center;color: SlateBlue'>Some cool programming languages to learn!</h2>" +
                         "<ol style='font-size:2vw;text-align:center'>" +
                         "<li>JavaScript</li>" +
                         "<li>Java</li>" +
@@ -33,8 +33,8 @@ public class SkillsController {
         String lang2 = request.getParameter("Language2");
         String lang3 = request.getParameter("Language3");
         String name = request.getParameter("name");
-        String display = "<html" +
-                "<body>" +
+        String display = "<html>" +
+                "<body style= 'background-color: MediumSeaGreen'>" +
                 "<h1 style='font-size:7vw;text-align:center'>" + name + "</h1>" +
                 "<ol style='font-size:2vw;text-align:center'>" +
                 "<li>" + lang1 + "</li>" +
@@ -49,13 +49,13 @@ public class SkillsController {
     public String usersChoice(){
         String html =
                 "<html>" +
-                        "<body style='text-align:center'>" +
+                        "<body style='text-align:center;background-color: LightGray'>" +
                         "<form method = 'post' action='language'>" +
-                        "<label for 'Name' style='font-size:2vw'>Name:</label>" +
+                        "<label for 'Name' style='font-size:3vw'>Name:</label>" +
                         "<br>" +
                         "<input type='text' name='name'/>" +
                         "<br>" +
-                        "<label for='Language' style='font-size:2vw'>My favorite language:</label>" +
+                        "<label for='Language' style='font-size:3vw'>My favorite language:</label>" +
                         "<br>" +
                         "<select name='Language' id='Language'>" +
                         "<option value='Java'>Java</option>" +
@@ -65,7 +65,7 @@ public class SkillsController {
                         "<option value='C#'>C#</option>" +
                         "</select>" +
                         "<br>" +
-                        "<label for='Language' style='font-size:2vw'>My second favorite language:</label>" +
+                        "<label for='Language' style='font-size:3vw'>My second favorite language:</label>" +
                         "<br>" +
                         "<select name='Language2' id='Language2'>" +
                         "<option value='Java'>Java</option>" +
@@ -75,7 +75,7 @@ public class SkillsController {
                         "<option value='C#'>C#</option>" +
                         "</select>" +
                         "<br>" +
-                        "<label for='Language' style='font-size:2vw'>My third favorite language:</label>" +
+                        "<label for='Language' style='font-size:3vw'>My third favorite language:</label>" +
                         "<br>" +
                         "<select name='Language3' id='Language3'>" +
                         "<option value='Java'>Java</option>" +
